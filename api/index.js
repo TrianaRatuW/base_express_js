@@ -24,8 +24,8 @@ bot.onText(/\/show_url/, (msg) => {
     bot.sendMessage(
         global_msg_id,
         `
-            https://esp-telebot.herokuapp.com/api/sensor/123/65/78 \n
-            https://esp-telebot.herokuapp.com/api/test/cobacoba
+            https://esp-lat1.herokuapp.com/api/sensor/123/456/789 \n
+            https://esp-lat1.herokuapp.com/api/test/Forum%2012
         `
     );
 });
