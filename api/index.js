@@ -15,9 +15,20 @@ bot.onText(/\/start/, (msg) => {
     bot.sendMessage(
         global_msg_id,
         `hello ${msg.chat.first_name}, welcome...\n
+        next >> /menu
+        `
+    );
+});
+
+bot.onText(/\/menu/, (msg) => {
+    global_msg_id = msg.chat.id;
+    bot.sendMessage(
+        global_msg_id,
+        `
         mau ngapain nih?
-        1. click /show_url
-        2. click /sensor`
+        1. /sensor
+        2. /show_url
+        `
     );
 });
 
