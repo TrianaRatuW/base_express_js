@@ -24,7 +24,7 @@ bot.onText(/\/show_url/, (msg) => {
     bot.sendMessage(
         global_msg_id,
         `
-            https://esp-lat1.herokuapp.com/api/sensor/123/456/789 \n
+            https://esp-pbm12.herokuapp.com/api/test/hallo \n
             https://esp-lat1.herokuapp.com/api/test/Forum%2012
         `
     );
