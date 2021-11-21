@@ -25,7 +25,7 @@ bot.onText(/\/show_url/, (msg) => {
         global_msg_id,
         `
             https://esp-pbm12.herokuapp.com/api/test/hallo \n
-            https://esp-lat1.herokuapp.com/api/test/Forum%2012
+            https://esp-pbm12.herokuapp.com/api/test/assalamualaikum
         `
     );
 });
