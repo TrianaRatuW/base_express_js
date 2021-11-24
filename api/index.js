@@ -21,16 +21,11 @@ bot.onText(/\/start/, (msg) => {
 });
 
 bot.onText(/\/menu/, (msg) => {
-    global_msg_id = msg.chat.id;
-    bot.sendMessage(
-        global_msg_id,
-        `
-        mau ngapain nih?
-        1. /sensor
-        2. /show_url
-        `
-    );
-});
+    bot.sendMessage(msg.chat.id, `Welcome, ${msg.chat.first_name}`, {
+    "reply_markup": {
+      "keyboard":[["/NIM"],["/show_url"],["/end"]]
+      }
+    });
 
 bot.onText(/\/show_url/, (msg) => {
     global_msg_id = msg.chat.id;
@@ -39,6 +34,26 @@ bot.onText(/\/show_url/, (msg) => {
         `
             https://esp-pbm12.herokuapp.com/api/test/hallo \n
             https://esp-pbm12.herokuapp.com/api/test/assalamualaikum
+        `
+    );
+});
+
+bot.onText(/\/NIM/, (msg) => {
+    global_msg_id = msg.chat.id;
+    bot.sendMessage(
+        global_msg_id,
+        `
+        NIM : 41421110122
+        `
+    );
+});
+    
+    bot.onText(/\/end/, (msg) => {
+    global_msg_id = msg.chat.id;
+    bot.sendMessage(
+        global_msg_id,
+        `
+        Thank You :)
         `
     );
 });
