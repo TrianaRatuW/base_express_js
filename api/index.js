@@ -21,12 +21,16 @@ bot.onText(/\/start/, (msg) => {
 });
 
 bot.onText(/\/menu/, (msg) => {
-    bot.sendMessage(msg.chat.id, `Menu for you, ${msg.chat.first_name}`, {
-    "reply_markup": {
-      "keyboard":[["/NIM"],["/show_url"],["/end"]]
-        );
-      }
-    });
+    global_msg_id = msg.chat.id;
+    bot.sendMessage(
+        global_msg_id,
+        `here menu for you, ${msg.chat.first_name}\n
+        1. NIM
+        2. show_url
+        3. end
+        `
+    );
+});
 
 bot.onText(/\/show_url/, (msg) => {
     global_msg_id = msg.chat.id;
