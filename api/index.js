@@ -24,6 +24,7 @@ bot.onText(/\/menu/, (msg) => {
     bot.sendMessage(msg.chat.id, `Menu for you, ${msg.chat.first_name}`, {
     "reply_markup": {
       "keyboard":[["/NIM"],["/show_url"],["/end"]]
+        );
       }
     });
 
