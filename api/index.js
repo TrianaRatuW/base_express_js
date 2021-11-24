@@ -38,7 +38,7 @@ bot.onText(/\/show_url/, (msg) => {
         global_msg_id,
         `
             https://esp-pbm12.herokuapp.com/api/test/hallo \n
-            https://esp-pbm12.herokuapp.com/api/test/assalamualaikum
+            https://esp-pbm12.herokuapp.com/api/test/ayo%20dicoba
         `
     );
 });
