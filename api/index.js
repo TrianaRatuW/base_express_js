@@ -25,9 +25,9 @@ bot.onText(/\/menu/, (msg) => {
     bot.sendMessage(
         global_msg_id,
         `here menu for you, ${msg.chat.first_name}\n
-        1. NIM
-        2. show_url
-        3. end
+        1. /NIM
+        2. /show_url
+        3. /end
         `
     );
 });
